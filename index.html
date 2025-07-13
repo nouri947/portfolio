@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nouri Belghit's Portfolio</title>
+
+  <!-- AOS Animations CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">Nouri</h2>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="home">
+    <div class="container" data-aos="fade-down">
+      <img src="profile.jpg" alt="Nouri Belghit" class="profile-img" />
+      <h1>Hello, I'm <span>Nouri Belghit</span></h1>
+      <p>A Computer Science Student</p>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+ <section class="about" id="about">
+  <div class="container" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I'm a self-driven Web Developer with a strong passion for crafting elegant and efficient websites and web applications. Over the past 2+ years, I’ve worked on various freelance projects and personal platforms using modern technologies like HTML, CSS, JavaScript, PHP, and MySQL.
+    </p>
+    <p>
+      My main focus is frontend development with clean UI/UX design principles, but I also enjoy diving into backend development and building full-stack web solutions. I’m constantly learning, experimenting with new tools, and striving to write better, more maintainable code.
+    </p>
+    <p>
+      Currently, I’m working as a Junior Developer at <strong>DevNova Solutions</strong> (Remote), collaborating with international teams and delivering responsive, user-focused web interfaces.
+    </p>
+  </div>
+</section>
+
+
+  <!-- ===== Skills Section ===== -->
+  <section class="skills" id="skills">
+    <div class="container" data-aos="fade-right">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>C Programming</li>
+        <li>HTML / CSS / JavaScript</li>
+        <li>PHP & MySQL</li>
+        <li>Problem Solving</li>
+        <li>Teamwork & Event Management</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section class="projects" id="projects">
+    <div class="container" data-aos="fade-left">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>UniShare DZ</h3>
+        <p>A web application built for Algerian university students to share academic resources.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="contact" id="contact">
+    <div class="container" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <p>You can reach me via:</p>
+     <ul class="contact-list">
+  <li>Email: officielnouri@gmail.com</li>
+  <li>GitHub: <a href="https://github.com/nouridev" target="_blank">@nouridev</a></li>
+  <li>Freelance Available: Yes (Remote only)</li>
+  <li>Current Role: Junior Web Developer at DevNova Solutions</li>
+  <li>Specialties: Frontend Development, UI/UX, PHP & MySQL</li>
+  <li>Portfolio Website: <a href="https://nouri.dev" target="_blank">nouri.dev</a></li>
+</ul>
+
+
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Scroll to Top Script -->
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+
+    scrollBtn.onclick = function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    };
+  </script>
+
+</body>
+</html>
+

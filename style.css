@@ -1,0 +1,213 @@
+/* ==== General Reset ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a0033, #2c003e); /* Dark Purple Gradient */
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* ==== Container ==== */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* ==== Hero Section ==== */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #a259ff; /* Highlight Purple */
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+/* ==== Section Titles ==== */
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  border-bottom: 2px solid #a259ff;
+  display: inline-block;
+}
+
+/* ==== About Section ==== */
+.about p {
+  font-size: 1.1rem;
+  color: #ddd;
+  max-width: 800px;
+}
+
+/* ==== Skills Section ==== */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skills-list li {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  text-align: center;
+  font-weight: 500;
+  color: #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ==== Projects Section ==== */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+}
+
+.project-card h3 {
+  color: #a259ff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ccc;
+}
+
+/* ==== Contact Section ==== */
+.contact-list {
+  list-style: none;
+  margin-top: 15px;
+  padding-left: 0;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.contact-list a {
+  color: #a259ff;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+}
+/* ==== Navbar ==== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(30, 0, 60, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  color: #a259ff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #a259ff;
+}
+
+/* ==== Profile Image ==== */
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #a259ff;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+/* ==== Scroll to Top Button ==== */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  background-color: #a259ff;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #8228ff;
+}
